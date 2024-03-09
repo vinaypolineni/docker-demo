@@ -1,5 +1,5 @@
-FROM centos:latest
-LABEL maintainer="vinaypolineni"
+FROM centos:7
+LABEL maintainer="Vinay Polineni"
 RUN yum -y install httpd
 COPY index.html /var/www/html/
 COPY container.png /var/www/html/
